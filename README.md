@@ -1,67 +1,127 @@
-# GeoAlerta Tuntum
-
-Sistema inteligente de apoio à prevenção de enchentes no município de Tuntum/MA, integrando geotecnologia, análise espacial, indicadores ambientais e inteligência artificial para apoiar a gestão pública na identificação de áreas vulneráveis.
+# GeoAlerta Tuntum  
+### Plataforma Inteligente de Análise Territorial e Prevenção de Enchentes com Geotecnologia e Inteligência Artificial
 
 ---
 
-# Visão Geral
+## Apresentação
 
-O GeoAlerta Tuntum foi desenvolvido para transformar dados territoriais em informação estratégica para tomada de decisão.
+O **GeoAlerta Tuntum** é uma plataforma desenvolvida para apoiar a gestão pública municipal na identificação, análise e monitoramento de áreas com maior vulnerabilidade a enchentes e alagamentos.
 
-A plataforma combina:
+O sistema integra:
 
-- análise espacial por células territoriais;
-- variáveis topográficas;
+- geoprocessamento territorial;
+- análise espacial por microcélulas;
+- indicadores topográficos;
 - proximidade hídrica;
 - proxy climático;
-- classificação automática de risco;
-- visualização territorial interativa.
+- classificação analítica de risco;
+- visualização territorial interativa;
+- leitura executiva simplificada para gestores.
 
-O objetivo é permitir que gestores públicos, técnicos e autoridades visualizem de forma clara os pontos de maior vulnerabilidade a enchentes.
-
----
-
-# Problema que o projeto resolve
-
-Eventos de alagamento e enchentes exigem capacidade de antecipação territorial.
-
-Sem análise espacial detalhada, a tomada de decisão depende apenas de observação empírica.
-
-O GeoAlerta entrega:
-
-- leitura territorial objetiva;
-- priorização de áreas críticas;
-- apoio ao planejamento preventivo;
-- leitura por bairro;
-- leitura por microcélulas territoriais.
+A proposta central é transformar dados geográficos complexos em informação estratégica clara, acessível e acionável.
 
 ---
 
-# Objetivos do sistema
+# Finalidade do Projeto
 
-- identificar áreas com maior risco territorial;
-- consolidar indicadores de vulnerabilidade;
-- gerar leitura acessível para gestores;
-- disponibilizar mapas interativos;
-- apoiar planejamento preventivo municipal.
+A prevenção territorial exige capacidade de antecipação.
+
+Na ausência de leitura espacial detalhada, decisões sobre drenagem, infraestrutura, proteção urbana e resposta emergencial tendem a ser reativas.
+
+O GeoAlerta foi concebido para permitir:
+
+- antecipação territorial;
+- leitura objetiva do risco;
+- identificação de áreas prioritárias;
+- apoio à formulação de políticas públicas;
+- fortalecimento da capacidade preventiva municipal.
 
 ---
 
-# Arquitetura Geral
+# Problema Público Enfrentado
 
-```text
+Eventos extremos de chuva e ocupação territorial inadequada produzem impactos recorrentes em áreas urbanas vulneráveis.
+
+Sem instrumentos analíticos adequados, a gestão depende predominantemente de observação empírica.
+
+O GeoAlerta introduz uma lógica baseada em evidência territorial.
+
+---
+
+# Objetivos Estratégicos
+
+- identificar microáreas vulneráveis;
+- classificar risco territorial;
+- gerar leitura espacial por bairro;
+- apoiar priorização de intervenções;
+- permitir leitura simples por autoridades não técnicas;
+- integrar ciência de dados à gestão urbana.
+
+---
+
+# Conceito Analítico
+
+O sistema opera em células espaciais menores distribuídas sobre o território municipal.
+
+Cada célula recebe avaliação baseada em variáveis ambientais e espaciais.
+
+---
+
+# Variáveis consideradas
+
+## Elevação média do terreno
+
+Representa a altitude relativa da célula territorial.
+
+Áreas mais baixas tendem a concentrar maior propensão à acumulação hídrica.
+
+---
+
+## Inclinação média do terreno
+
+Indica a capacidade de escoamento superficial.
+
+Terrenos pouco inclinados favorecem retenção hídrica.
+
+---
+
+## Distância média até corpos d’água
+
+Mede proximidade de rios, drenagens e áreas hídricas.
+
+Quanto menor a distância, maior a influência hídrica potencial.
+
+---
+
+## Proxy de chuva
+
+Representa fator estimado de influência pluviométrica sobre o território analisado.
+
+---
+
+## Nível de risco territorial
+
+Resultado consolidado da combinação das variáveis.
+
+---
+
+# Lógica de Funcionamento
+
+```text id="hcl22k"
 Dados territoriais
-     ↓
-Processamento espacial
-     ↓
-Geração de células
-     ↓
-Cálculo de indicadores
-     ↓
-Modelo analítico / IA
-     ↓
+      ↓
+Camadas geográficas
+      ↓
+Geração de células espaciais
+      ↓
+Cálculo de variáveis ambientais
+      ↓
+Classificação analítica
+      ↓
+Geração de score territorial
+      ↓
 Classificação do risco
-     ↓
+      ↓
 API FastAPI
-     ↓
-App Web + Dashboards
+      ↓
+Dashboards + Aplicação Web
