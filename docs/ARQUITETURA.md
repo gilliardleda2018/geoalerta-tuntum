@@ -34,6 +34,8 @@ Dashboards técnicos
 Aplicação web institucional
 Camadas do Sistema
 
+---
+
 # Camada 1 — Dados Territoriais
 
 Responsável pelos insumos espaciais utilizados no modelo.
@@ -55,7 +57,9 @@ Função desta camada
 
 Fornecer a base geográfica necessária para todos os cálculos posteriores.
 
-Camada 2 — Processamento Espacial
+---
+
+# Camada 2 — Processamento Espacial
 
 Responsável pela geração das unidades territoriais de análise.
 
@@ -71,7 +75,10 @@ Saídas geradas
 CSVs intermediários;
 camadas geográficas processadas;
 GeoPackage consolidado.
-Camada 3 — Variáveis Analíticas
+
+--- 
+
+# Camada 3 — Variáveis Analíticas
 
 Responsável pelo cálculo das variáveis ambientais.
 
@@ -82,7 +89,7 @@ distância da água;
 proxy de chuva.
 Resultado desta camada
 
-Cada célula passa a possuir um vetor analítico.
+# Cada célula passa a possuir um vetor analítico.
 
 Exemplo conceitual
 Célula A:
@@ -92,13 +99,13 @@ distância água = 85m
 proxy chuva = 0.64
 Camada 4 — Classificação Territorial
 
-Responsável pela geração do nível de risco.
+# Responsável pela geração do nível de risco.
 
 Script principal
 treinar_modelo_ia_tuntum.py
 Resultado
 
-Produção de:
+# Produção de:
 
 score numérico;
 classe qualitativa.
@@ -107,7 +114,7 @@ resultado_ia_tuntum.csv
 score_enchente_tuntum.gpkg
 Camada 5 — Consolidação Territorial por Bairro
 
-Responsável por agregar as células em leitura territorial executiva.
+# Responsável por agregar as células em leitura territorial executiva.
 
 Script principal
 dashboard_bairros_tuntum.py
@@ -118,7 +125,7 @@ percentual crítico;
 áreas prioritárias.
 Camada 6 — API
 
-Responsável pela distribuição dos dados.
+# Responsável pela distribuição dos dados.
 
 Script principal
 api_tuntum.py
@@ -135,7 +142,7 @@ Endpoints principais
 /api/geojson-bairros
 Camada 7 — Dashboards Técnicos
 
-Responsável pela leitura analítica aprofundada.
+# Responsável pela leitura analítica aprofundada.
 
 Dashboard por células
 dashboard_ia_mapa_tuntum.py
@@ -143,22 +150,23 @@ Dashboard por bairros
 dashboard_bairros_tuntum.py
 Objetivo
 
-Permitir:
+#Permitir:
 
 inspeção técnica;
 conferência territorial;
 validação espacial.
 Camada 8 — Aplicação Web Institucional
 
-Responsável pela leitura simplificada.
+# Responsável pela leitura simplificada.
 
-Tecnologias
+# Tecnologias
+
 React
 Vite
 Leaflet
 Objetivo
 
-Entregar:
+#Entregar:
 
 KPIs;
 gráficos;
@@ -169,7 +177,7 @@ gestores;
 secretarias;
 coordenação técnica;
 defesa civil.
-Fluxo Completo de Operação
+# Fluxo Completo de Operação
 Raster + bairros + hidrografia
         ↓
 Células espaciais
@@ -185,13 +193,16 @@ Agrupamento por bairro
 API
         ↓
 WebApp / Dashboards
-Estrutura Atual do Projeto
+
+# Estrutura Atual do Projeto
 backend/
 webapp/
 data/
 docs/
 scripts/
-Separação de Responsabilidades
+
+# Separação de Responsabilidades
+
 Camada	Responsabilidade
 data	insumos
 backend	cálculo e API
@@ -200,7 +211,7 @@ docs	documentação
 scripts	operação
 Benefício Arquitetural
 
-A separação em camadas permite:
+#A separação em camadas permite:
 
 manutenção;
 expansão;
@@ -218,4 +229,4 @@ expansão para outros municípios;
 regionalização.
 Filosofia Arquitetural
 
-O GeoAlerta foi estruturado para transformar análise territorial complexa em instrumento real de decisão pública.
+# O GeoAlerta foi estruturado para transformar análise territorial complexa em instrumento real de decisão pública.
