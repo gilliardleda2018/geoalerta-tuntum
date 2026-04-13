@@ -1,0 +1,148 @@
+{
+  "types": {
+    "resourceTypeGeneral": "Dataset",
+    "resourceType": "Lidar Data"
+  },
+  "identifiers": [
+    {
+      "identifierType": "DOI",
+      "identifier": "https://doi.org/10.5069/G9028PQB"
+    },
+    {
+      "identifierType": "URL",
+      "identifier": "https://opentopography.org/datasetMetadata?otCollectionID=OT.032021.4326.1"
+    }
+  ],
+  "creators": [
+    {
+      "nameType": "Organizational",
+      "name": "OpenTopography",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://opentopography.org",
+          "nameIdentifierScheme": "URL"
+        },
+        {
+          "nameIdentifier": "info@opentopography.org",
+          "nameIdentifierScheme": "EMAIL"
+        }
+      ]
+    }
+  ],
+  "titles": [
+    {
+      "title": "Copernicus Global Digital Elevation Models",
+      "lang": "en-US"
+    }
+  ],
+  "publisher": "OpenTopography",
+  "publicationYear": "2021",
+  "contributors": [
+    {
+      "nameType": "Organizational",
+      "name": "European Space Agency",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://www.esa.int/",
+          "nameIdentifierScheme": "URL"
+        }
+      ],
+      "contributorType": "Sponsor"
+    },
+    {
+      "nameType": "Organizational",
+      "name": "German Aerospace Centre",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://www.dlr.de/EN/Home/home_node.html",
+          "nameIdentifierScheme": "URL"
+        }
+      ],
+      "contributorType": "ProjectMember"
+    },
+    {
+      "nameType": "Organizational",
+      "name": "Airbus Defence and Space",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://www.airbus.com/en",
+          "nameIdentifierScheme": "URL"
+        }
+      ],
+      "contributorType": "ProjectMember"
+    },
+    {
+      "nameType": "Organizational",
+      "name": "OpenTopography",
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://opentopography.org",
+          "nameIdentifierScheme": "URL"
+        },
+        {
+          "nameIdentifier": "info@opentopography.org",
+          "nameIdentifierScheme": "EMAIL"
+        }
+      ],
+      "contributorType": "Distributor"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2011-01-01/2015-07-01",
+      "dateType": "Collected"
+    },
+    {
+      "date": "2021-04-22",
+      "dateType": "Issued"
+    }
+  ],
+  "language": "en-US",
+  "formats": [
+    "Raster Data"
+  ],
+  "rightsList": [
+  "\u00A9 DLR e.V. 2010-2014 and \u00A9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved."
+  ],
+  "descriptions": [
+    {
+      "description": "<p>\nThe Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. This DSM is derived from an edited DSM named WorldDEM, where flattening of water bodies and consistent flow of rivers has been included. In addition, editing of shore- and coastlines, special features such as airports, and implausible terrain structures has also been applied.<\/p>\n<p>\nThe WorldDEM product is based on the radar satellite data acquired during the TanDEM-X Mission, which is funded by a Public Private Partnership between the German State, represented by the German Aerospace Centre (DLR) and Airbus Defence and Space. OpenTopography is providing access to the global GLO-30 and GLO-90 Defence Gridded Elevation Data (DGED) 2023_1 version of the data hosted by ESA via the PRISM service. Details on the Copernicus DSM can be found on this <a href='https:\/\/collections.sentinel-hub.com\/copernicus-dem\/' target='_blank'>ESA site<\/a>.<\/a>  \n<\/p><br \/>\n<b><u>Important Notes:<\/b><\/u> \n<ul>\n<li>Previous to July 23rd 2024, OpenTopography was providing access to the Copernicus data through the <a href='https:\/\/registry.opendata.aws\/copernicus-dem\/' target='_blank'>public AWS S3 bucket established by Sinergise<\/a>. <b><u>As of July 23rd 2024, Opentopography is providing the DGED 2023_1 version of GLO-30 and GLO-90 as downloaded directly from ESA <\/b><\/u>. For more details on the Copernicus data accessible though OpenTopography, see the survey report below.<\/li>\n<li>The original gridded data from ESA is in geographic coordinates where the longitudinal cell spacing increases as a function of latitude for regions north of 50N and south of 50S. For more details see the Grid Spacing section of the Copernicus DEM handbook (in survey report below). In order to keep the pixel dimensions uniform, OpenTopography resamples data north of 50 degrees latitude and south of -50 degrees latitude in order to output a consistent 1 Arc-second or 3 Arc-second product <b><u>for data accessed through the web-interface or API<\/b><\/u>. Users who need data north of 50N or south of 50S, and prefer to use the original, longitude-varying grid spacing can download cloud optimized geotiff (COG) versions of the tiles from our bulk download interface, or download the original data directly from ESA.<\/li>\n<li>The GLO-30 and GLO-90 datasets are available on a free basis for the general public under the terms and conditions of the Copernicus license found <a href='https:\/\/docs.sentinel-hub.com\/api\/latest\/static\/files\/data\/dem\/resources\/license\/License-COPDEM-30.pdf' target='_blank'>here.<\/a><\/li>\n<\/ul>",
+      "descriptionType": "Abstract",
+      "lang": "en-US"
+    }
+  ],
+  "geoLocations": [
+    {
+      "geoLocationBox": {
+        "westBoundLongitude": "-180.0",
+        "eastBoundLongitude": "180.0",
+        "southBoundLatitude": "-85.0",
+        "northBoundLatitude": "84.0"
+      },
+      "geoLocationPlace": ""
+    }
+  ],
+  "fundingReferences": [
+    {
+      "funderName": "National Science Foundation",
+      "awardURI": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948857",
+      "awardNumber": "1948857",
+      "awardTitle": "Collaborative Research: OpenTopography - A cyberinfrastructure facility for advancing geoscience research and education"
+    },
+    {
+      "funderName": "National Science Foundation",
+      "awardURI": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948994",
+      "awardNumber": "1948994",
+      "awardTitle": "Collaborative Research: OpenTopography - A cyberinfrastructure facility for advancing geoscience research and education"
+    },
+    {
+      "funderName": "National Science Foundation",
+      "awardURI": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948997",
+      "awardNumber": "1948997",
+      "awardTitle": "Collaborative Research: OpenTopography - A cyberinfrastructure facility for advancing geoscience research and education"
+    }
+  ],
+  "schemaVersion": "http://datacite.org/schema/kernel-4"
+}
+
+
