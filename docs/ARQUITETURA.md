@@ -14,7 +14,7 @@ Cada camada possui responsabilidade específica e comunica-se de forma progressi
 
 # Modelo Conceitual Geral
 
-```text id="xw6m8q"
+
 Dados geográficos brutos
         ↓
 Preparação espacial
@@ -33,7 +33,8 @@ Dashboards técnicos
         ↓
 Aplicação web institucional
 Camadas do Sistema
-Camada 1 — Dados Territoriais
+
+# Camada 1 — Dados Territoriais
 
 Responsável pelos insumos espaciais utilizados no modelo.
 
