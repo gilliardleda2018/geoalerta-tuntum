@@ -175,7 +175,7 @@ TUNTUM_LON=-44.6489
 
 atualizar_modelo_com_chuva_dinamica.py
 
-#Função
+# Função
 
 consulta chuva real
 injeta no modelo
@@ -187,7 +187,7 @@ resultado_ia_tuntum.csv
 ---
 # Cenários Temporais de Chuva
 
-#O sistema permite simular:
+# O sistema permite simular:
 
 Hoje
 24h
@@ -202,7 +202,7 @@ dados/chuva_previsao.json
 
 gerar_cenarios_chuva.py
 
-#Saídas
+# Saídas
 saida/cenarios/resultado_ia_hoje.csv
 saida/cenarios/resultado_ia_24h.csv
 saida/cenarios/resultado_ia_48h.csv
@@ -218,7 +218,7 @@ saida/cenarios/resultado_ia_72h.csv
 
 dados/bairros_tuntum.geojson
 
-#Script
+# Script
 
 gerar_cenarios_sede_com_bairro.py
 
