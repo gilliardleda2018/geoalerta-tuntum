@@ -17,7 +17,12 @@ O sistema integra:
 - classificação analítica de risco;
 - visualização territorial interativa;
 - leitura executiva simplificada para gestores.
-
+- Modelo espacial geográfico
+- Inteligência Artificial
+- Proxy de chuva dinâmica
+- Cenários temporais de risco
+- Associação territorial por bairros
+- Dashboard executivo interativo
 A proposta central é transformar dados geográficos complexos em informação estratégica clara, acessível e acionável.
 
 ---
@@ -74,8 +79,36 @@ Cada célula recebe avaliação baseada em variáveis ambientais e espaciais.
 Representa a altitude relativa da célula territorial.
 
 Áreas mais baixas tendem a concentrar maior propensão à acumulação hídrica.
+# Variáveis Utilizadas no Modelo
+
+## Variáveis espaciais
+
+- Elevação média (`elev_mean`)
+- Declividade média (`slope_mean`)
+- Distância da drenagem (`dist_water_m`)
+- Score espacial composto (`score_0_10`)
+
+## Variável meteorológica dinâmica
+
+- Proxy de chuva (`chuva_proxy`)
+
+Fonte atual:
+
+- OpenWeather API
 
 ---
+
+# Integração com Chuva Real
+
+A chuva real é obtida dinamicamente via API:
+
+https://openweathermap.org/
+
+# Arquivo responsável
+
+
+servico_chuva.py
+
 
 ## Inclinação média do terreno
 
@@ -107,7 +140,6 @@ Resultado consolidado da combinação das variáveis.
 
 # Lógica de Funcionamento
 
-```text id="hcl22k"
 Dados territoriais
       ↓
 Camadas geográficas
